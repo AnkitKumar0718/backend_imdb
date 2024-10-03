@@ -11,7 +11,7 @@
         res.cookie("jwt-imdb", token, {
             maxAge: 15 * 24 * 60 * 60 * 1000, // 15 days
             httpOnly: true, 
-            sameSite: "lax", 
+            sameSite: "None", 
             secure: process.env.NODE_ENV !== "production",
         });
 
