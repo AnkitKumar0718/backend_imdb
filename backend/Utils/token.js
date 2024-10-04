@@ -13,7 +13,8 @@
             httpOnly: true, 
             sameSite: "None", 
             secure: false,
-            domain:'http://localhost:3000'
+            domain:'localhost',
+            path:'/'
         });
 
         return token;
