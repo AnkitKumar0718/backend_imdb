@@ -12,7 +12,8 @@
             maxAge: 15 * 24 * 60 * 60 * 1000, // 15 days
             httpOnly: true, 
             sameSite: "None", 
-            secure: true,
+            secure: false,
+            domain:'http://localhost:3000'
         });
 
         return token;
