@@ -76,5 +76,4 @@ return res.status(200).json({success:true,message:"Login Successfull"})
     }
 }
 
-
 module.exports={login,signup,logout}
