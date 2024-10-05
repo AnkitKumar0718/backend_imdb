@@ -32,6 +32,7 @@ app.use('/api',bookmarkRoute)
 
 
 const PORT=process.env.PORT
+console.log(PORT)
 connectDB();
 
 app.listen(PORT,()=>{
