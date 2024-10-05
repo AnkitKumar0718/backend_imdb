@@ -5,7 +5,7 @@ dotenv.config();
 const cookieParser = require('cookie-parser');
 const cors=require('cors');
 
-const jwt=require('jsonwebtoken');
+const apiDocumentation=require('./html')
 const authRoutes=require('./Routes/authRoute');
 const movieRoute=require('./Routes/movieRoute')
 const bookmarkRoute=require('./Routes/bookmarkRoute')
@@ -21,9 +21,10 @@ app.use(cors({
 }));            
 
 
-app.get('/',(req,res)=>{
-    res.send('Welcome to MovieDatabase')
-})
+app.get('/', (req, res) => {
+    res.send(apiDocumentation())
+});
+
 
 app.use('/api/auth',authRoutes) 
 app.use('/api/movie',movieRoute)

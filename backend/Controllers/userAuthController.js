@@ -77,19 +77,4 @@ return res.status(200).json({success:true,message:"Login Successfull"})
 }
 
 
-const deleteAllUsers = async (req, res) => {
-    try {
-        const result = await User.deleteMany({}); // Deletes all users
-
-        if (result.deletedCount === 0) {
-            return res.status(404).json({ success: false, message: 'No users found to delete' });
-        }
-
-        res.status(200).json({ success: true, message: 'All users deleted successfully', deletedCount: result.deletedCount });
-    } catch (error) {
-        res.status(500).json({ success: false, message: 'Failed to delete users', error: error.message });
-    }
-};
-
-
-module.exports={login,signup,logout,deleteAllUsers}
+module.exports={login,signup,logout}
