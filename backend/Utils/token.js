@@ -13,7 +13,6 @@
             httpOnly: true, 
             sameSite: "None", 
             secure: true,
-            domain:'localhost',
             path:'/'
         });
 
