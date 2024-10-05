@@ -12,7 +12,7 @@
             maxAge: 15 * 24 * 60 * 60 * 1000, // 15 days
             httpOnly: true, 
             sameSite: "None", 
-            secure: process.env.NODE_ENV,
+            secure: false,
             domain:'localhost',
             path:'/'
         });
