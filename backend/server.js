@@ -14,9 +14,9 @@ const connectDB=require('./Database/database');
 
 app.use(express.json());
 app.use(cookieParser());
+
 app.use(cors({
-    origin: 'http://localhost:3000',// Adjust as necessary for your frontend URL
-      'https://your-netlify-site.netlify.app',
+    origin: ['http://localhost:3000', 'https://your-netlify-site.netlify.app'], // Array of allowed origins
     credentials: true // Enable this to allow cookies to be sent
 }));
 
