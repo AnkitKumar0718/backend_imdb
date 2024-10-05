@@ -16,9 +16,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://imdb-movie-fullstack.netlify.app/'], // Array of allowed origins
+    origin: ['http://localhost:3000', 'https://imdb-movie-fullstack.netlify.app'], // Array of allowed origins
     credentials: true // Enable this to allow cookies to be sent
-}));
+}));            
 
 
 app.get('/',(req,res)=>{
