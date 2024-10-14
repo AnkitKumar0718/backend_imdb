@@ -17,6 +17,7 @@ app.use(cookieParser());
 
 app.use(cors({
     origin: ['http://localhost:3000', 'https://ankit-imdb-clone7788.netlify.app'], // Array of allowed origins
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow specific methods
     credentials: true // Enable this to allow cookies to be sent
 }));            
 
